@@ -26,6 +26,7 @@ async def do_stuff(cortex):
         await cortex.create_record(title="test record 1")
         print("** SUBSCRIBE POW & MET **")
         await cortex.subscribe(['met'])
+        import visualize
         while cortex.packet_count < 100:
             await cortex.get_data()
         await cortex.inject_marker(label='halfway', value=1,
@@ -37,7 +38,6 @@ async def do_stuff(cortex):
 
 def test():
     cortex = Cortex('./cortex_creds')
-    import visualize
     asyncio.run(do_stuff(cortex))
     cortex.close()
 
