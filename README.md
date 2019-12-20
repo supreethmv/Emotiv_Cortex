@@ -1,5 +1,6 @@
 # Cortex API: Python
 
+
 **Login**, **Download** and **Install** the Emotive Cortex Service from:
 (https://www.emotiv.com/my-account/downloads)
 
@@ -24,7 +25,8 @@ local\path\of\repo\CortexENV\Scripts\activate
 
 python example.py
 
-You'll have to provide access to this app in the Cortex Service 
+You'll have to provide access to this app in the Cortex Service (Only for the first time!!) 
+(May be you dont even need this as we'll be using the same login credentials) 
 
 
 **Issue**
